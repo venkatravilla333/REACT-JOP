@@ -1,6 +1,8 @@
 // import Parent from "./Component/Parent"
 
-import A from "./State/Props-Drilling/A"
+import A from "./State/Local-State/Simple-Data/A"
+
+// import A from "./State/Props-Drilling/A"
 
 // import A from "./State/Local-State/Simple-Data/A"
 
@@ -22,6 +24,7 @@ function App() {
       {/* <Parent/> */}
       {/* <Parent/> */}
       {/* <Parent/> */}
+      {/* <A/> */}
       {/* <A/> */}
       <A/>
     </div>
