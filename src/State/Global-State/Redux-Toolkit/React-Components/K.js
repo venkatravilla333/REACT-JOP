@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrease, increase } from '../Toolkit/slices/countSlice'
 import { buyCake } from '../Toolkit/slices/cakeSlice'
+import { fetchPosts } from '../Toolkit/slices/postsSlice'
 
 
 function K() {
@@ -13,15 +14,15 @@ function K() {
   var noOfCakes = useSelector((state) => {
     return state.cakeReducer.noOfCakes
   })
-//  var apiData = useSelector((state) => {
-//    return state.postsReducer
-//  })
+ var apiData = useSelector((state) => {
+   return state.postsReducer
+ })
 
   var dispatch = useDispatch() 
 
-  // var getPosts = () => {
-  //   dispatch(fetchPosts())
-  // }
+  var getPosts = () => {
+    dispatch(fetchPosts())
+  }
   
   return (
     <div>
@@ -32,8 +33,8 @@ function K() {
       <h2>K  cakes: {noOfCakes}</h2>
       <button onClick={() => dispatch(buyCake())}>buy cake</button>
       <br />
-      {/* <button onClick={getPosts}>get posts</button>
       <h2>Posts</h2>
+      <button onClick={getPosts}>get posts</button>
       {
         apiData.loading ? <h2>Loading</h2> : apiData.error ? <h3>{apiData.error}</h3> : 
           apiData.posts.map((obj) => {
@@ -42,7 +43,7 @@ function K() {
               <h3>Body: {obj.body}</h3>
             </React.Fragment>
           })
-      } */}
+      }
     
       
     </div>
