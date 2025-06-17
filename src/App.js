@@ -1,7 +1,10 @@
 // import Parent from "./Component/Parent"
 
+import A from "./State/Local-State/Complex-Data/A"
+import UseStateuseReducer from "./State/Local-State/Complex-Data/UseStateuseReducer"
+
 // import Container from "./Side-Effects/Cleanup-task/Container"
-import A from "./State/Global-State/Redux-Toolkit/React-Components/A"
+// import A from "./State/Global-State/Redux-Toolkit/React-Components/A"
 
 // import Parent from "./Side-Effects/Runs-only-once/Parent"
 
@@ -42,7 +45,9 @@ function App() {
       {/* <A/> */}
       {/* <A/> */}
       {/* <Container/> */}
-      <A/>
+      {/* <A/> */}
+      {/* <A/> */}
+      <UseStateuseReducer/>
       
     </div>
    
