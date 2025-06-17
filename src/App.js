@@ -1,7 +1,15 @@
 // import Parent from "./Component/Parent"
 
-import A from "./State/Local-State/Complex-Data/A"
-import UseStateuseReducer from "./State/Local-State/Complex-Data/UseStateuseReducer"
+// import Parent from "./Destructuring/Parent"
+// import List from "./List-Rendering/List"
+import Fragment from "./Performance/Fragment/Fragment"
+
+// import A from "./State/Global-State/Context-Api-useReducer/A"
+
+// import A from "./State/Global-State/Context-Api-useState/A"
+
+// import A from "./State/Local-State/Complex-Data/A"
+// import UseStateuseReducer from "./State/Local-State/Complex-Data/UseStateuseReducer"
 
 // import Container from "./Side-Effects/Cleanup-task/Container"
 // import A from "./State/Global-State/Redux-Toolkit/React-Components/A"
@@ -47,7 +55,10 @@ function App() {
       {/* <Container/> */}
       {/* <A/> */}
       {/* <A/> */}
-      <UseStateuseReducer/>
+      {/* <UseStateuseReducer/> */}
+      {/* <Parent/> */}
+      {/* <List/> */}
+      <Fragment/>
       
     </div>
    
