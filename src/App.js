@@ -1,11 +1,13 @@
 // import Parent from "./Component/Parent"
 
+import Storage from "./Refs/Nv-Sv-Rv/Storage"
+
 // import Conditional from "./Css-In-React/Conditional"
 // import Login from "./Css-In-React/Css-Modules/Login"
 // import Register from "./Css-In-React/Css-Modules/Register"
-import Count1 from "./Performance/Remove-Duplicate-Logic/Count1"
-import Count2 from "./Performance/Remove-Duplicate-Logic/Count2"
-import Count3 from "./Performance/Remove-Duplicate-Logic/Count3"
+// import Count1 from "./Performance/Remove-Duplicate-Logic/Count1"
+// import Count2 from "./Performance/Remove-Duplicate-Logic/Count2"
+// import Count3 from "./Performance/Remove-Duplicate-Logic/Count3"
 // import Parent from "./Portals/Parent"
 
 // import Parent from "./Conditional-Rendering/Parent"
@@ -78,10 +80,10 @@ function App() {
       <Login/> */}
       {/* <Conditional/> */}
       {/* <Parent/> */}
-      <Count1 />
+      {/* <Count1 />
       <Count2 />
-      <Count3 />
-      
+      <Count3 /> */}
+      <Storage/>
     </div>
    
   )
