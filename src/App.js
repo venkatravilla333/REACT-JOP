@@ -1,7 +1,9 @@
 // import Parent from "./Component/Parent"
 
+import Conditional from "./Css-In-React/Conditional"
 import Login from "./Css-In-React/Css-Modules/Login"
 import Register from "./Css-In-React/Css-Modules/Register"
+import Parent from "./Portals/Parent"
 
 // import Parent from "./Conditional-Rendering/Parent"
 // import Login from "./Css-In-React/External-Css/Login"
@@ -69,9 +71,10 @@ function App() {
       {/* <Fragment/> */}
       {/* <Parent/> */}
       {/* <Inline/> */}
-      
-      <Register />
-      <Login/>
+      {/* <Register />
+      <Login/> */}
+      {/* <Conditional/> */}
+      <Parent/>
       
     </div>
    
