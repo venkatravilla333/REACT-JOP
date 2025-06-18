@@ -1,8 +1,16 @@
 // import Parent from "./Component/Parent"
 
+import Login from "./Css-In-React/Css-Modules/Login"
+import Register from "./Css-In-React/Css-Modules/Register"
+
+// import Parent from "./Conditional-Rendering/Parent"
+// import Login from "./Css-In-React/External-Css/Login"
+// import Register from "./Css-In-React/External-Css/Register"
+// import Inline from "./Css-In-React/Inline-Css/Inline"
+
 // import Parent from "./Destructuring/Parent"
 // import List from "./List-Rendering/List"
-import Fragment from "./Performance/Fragment/Fragment"
+// import Fragment from "./Performance/Fragment/Fragment"
 
 // import A from "./State/Global-State/Context-Api-useReducer/A"
 
@@ -58,7 +66,12 @@ function App() {
       {/* <UseStateuseReducer/> */}
       {/* <Parent/> */}
       {/* <List/> */}
-      <Fragment/>
+      {/* <Fragment/> */}
+      {/* <Parent/> */}
+      {/* <Inline/> */}
+      
+      <Register />
+      <Login/>
       
     </div>
    
