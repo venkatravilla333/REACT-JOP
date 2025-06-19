@@ -1,6 +1,10 @@
 // import Parent from "./Component/Parent"
 
+import Element from "./Refs/Access-Dom-Element/Element"
+import Controlled from "./Refs/Controlled"
 import Storage from "./Refs/Nv-Sv-Rv/Storage"
+import Timer from "./Refs/Refer-Value/Timer"
+import Uncontrolled from "./Refs/Uncontrolled"
 
 // import Conditional from "./Css-In-React/Conditional"
 // import Login from "./Css-In-React/Css-Modules/Login"
@@ -83,7 +87,11 @@ function App() {
       {/* <Count1 />
       <Count2 />
       <Count3 /> */}
-      <Storage/>
+      {/* <Storage/> */}
+      {/* <Element/> */}
+      {/* <Timer/> */}
+      <Controlled />
+      <Uncontrolled/>
     </div>
    
   )
