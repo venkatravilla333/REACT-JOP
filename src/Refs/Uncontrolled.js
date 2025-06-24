@@ -7,6 +7,7 @@ function Uncontrolled() {
   var getValue = () => {
    console.log(inputRef.current.value)
   }
+
   
   return (
     <div>
