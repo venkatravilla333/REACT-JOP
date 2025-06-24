@@ -33,7 +33,8 @@
 
 
 import React from 'react'
-import A from './Class-Components/State/Global-State/Redux-Concept/React-Componets/A'
+import Parent from './Class-Components/Destructuring/Parent'
+// import A from './Class-Components/State/Global-State/Redux-Concept/React-Componets/A'
 // import A from './Class-Components/State/Global-State/Context-Api/Components/A'
 // import Parent from './Class-Components/Props/Parent'
 // import A from './Class-Components/State/Local-State/Components/A'
@@ -49,7 +50,8 @@ function App() {
       {/* {console.log(new Parent())} */}
       {/* <A/> */}
       {/* <Parent/> */}
-      <A/>
+      {/* <A/> */}
+      <Parent/>
     </div>
   )
 }
