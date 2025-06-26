@@ -33,11 +33,16 @@
 
 
 import React from 'react'
+import Parent from './Class-Components/Side-Effects/ApiCall/Parent'
+// import Parent from './Class-Components/Side-Effects/3.Runs-Only-Once/Parent'
+// import Container from './Class-Components/Side-Effects/4.Cleanup-Task/Container'
+// import Parent from './Class-Components/Side-Effects/2.Runs-Conditionally/Parent'
+// import Parent from './Class-Components/Side-Effects/1.Dafault-Nature/Parent'
 // import Render from './Class-Components/Performance/Remove-Duplicate-Logic/Render-Props-Pattern/Render'
 // import Count1 from './Class-Components/Performance/Remove-Duplicate-Logic/Render-Props-Pattern/Count1'
 // import Count2 from './Class-Components/Performance/Remove-Duplicate-Logic/Render-Props-Pattern/Count2'
 // import Count3 from './Class-Components/Performance/Remove-Duplicate-Logic/Render-Props-Pattern/Count3'
-import Parent from './Class-Components/Life-Cycle-Methods/Mounting/Parent'
+// import Parent from './Class-Components/Life-Cycle-Methods/Mounting/Parent'
 // import Count1 from './Class-Components/Performance/Remove-Duplicate-Logic/Render-Props-Pattern/Count1'
 // import Parent from './Class-Components/Destructuring/Parent'
 // import Count1 from './Class-Components/Performance/Remove-Duplicate-Logic/Count1'
@@ -78,6 +83,10 @@ function App() {
       <Render test={(count, updateCount) => {
         return <Count3 count={count } updateCount = {updateCount} />
       }} /> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Container/> */}
       <Parent/>
     </div>
   )
