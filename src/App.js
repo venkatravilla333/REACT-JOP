@@ -33,7 +33,8 @@
 
 
 import React from 'react'
-import Parent from './Class-Components/Side-Effects/ApiCall/Parent'
+import Parent from './Class-Components/Life-Cycle-Methods/Error-Boundry/Parent'
+// import Parent from './Class-Components/Side-Effects/ApiCall/Parent'
 // import Parent from './Class-Components/Side-Effects/3.Runs-Only-Once/Parent'
 // import Container from './Class-Components/Side-Effects/4.Cleanup-Task/Container'
 // import Parent from './Class-Components/Side-Effects/2.Runs-Conditionally/Parent'
@@ -87,6 +88,7 @@ function App() {
       {/* <Parent/> */}
       {/* <Parent/> */}
       {/* <Container/> */}
+      {/* <Parent/> */}
       <Parent/>
     </div>
   )
