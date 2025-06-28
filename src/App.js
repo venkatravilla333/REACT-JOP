@@ -1,48 +1,49 @@
 import React from 'react';
-import Home from './Routing/Home';
-// import About from './Routing/About'
-import Products from './Routing/Products';
+import Parent from './Performance/Prevent-Unnecessory-Re-rendering/Parent';
+// import Home from './Routing/Home';
+// // import About from './Routing/About'
+// import Products from './Routing/Products';
 
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Header from './Routing/Header';
-import Footer from './Routing/Footer';
-import ProductDetails from './Routing/ProductDetails';
-import PageNotFound from './Routing/PageNotFound';
+// import { Route, Routes, useLocation } from 'react-router-dom';
+// import Header from './Routing/Header';
+// import Footer from './Routing/Footer';
+// import ProductDetails from './Routing/ProductDetails';
+// import PageNotFound from './Routing/PageNotFound';
 
-var About = React.lazy(() => import('./Routing/About'));
+// var About = React.lazy(() => import('./Routing/About'));
 
-function App() {
-  var url = useLocation();
-  return (
-    <div>
-      <Header />
-      {/* {url.pathname !== '/about' && <Header/> } */}
+// function App() {
+//   var url = useLocation();
+//   return (
+//     <div>
+//       <Header />
+//       {/* {url.pathname !== '/about' && <Header/> } */}
 
-      <main className='main-div'>
-        <Routes>
-          <Route path='/'>
-            <Route index element={<Home />} />
-            <Route
-              path='/about'
-              element={
-                <React.Suspense fallback='Loading'>
-                  <About />
-                </React.Suspense>
-              }
-            />
-            <Route path='*' element={<PageNotFound />} />
-            <Route path='/products' element={<Products />}>
-              <Route path=':id' element={<ProductDetails />} />
-            </Route>
-          </Route>
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
-}
+//       <main className='main-div'>
+//         <Routes>
+//           <Route path='/'>
+//             <Route index element={<Home />} />
+//             <Route
+//               path='/about'
+//               element={
+//                 <React.Suspense fallback='Loading'>
+//                   <About />
+//                 </React.Suspense>
+//               }
+//             />
+//             <Route path='*' element={<PageNotFound />} />
+//             <Route path='/products' element={<Products />}>
+//               <Route path=':id' element={<ProductDetails />} />
+//             </Route>
+//           </Route>
+//         </Routes>
+//       </main>
+//       <Footer />
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
 
 // import React from 'react'
 // import Parent from './Class-Components/Refs/Attach-Refsto-ChildCom/Parent'
@@ -75,45 +76,46 @@ export default App;
 // import Parent from './Class-Components/State/Parent'
 // import Parent from './Class-Components/Component/Parent'
 
-// function App() {
-//   return (
-//     <div>
-//       <h4>App com</h4>
-//       {/* {new Parent().render()} */}
-//       {/* <Parent age={100} /> */}
-//       {/* {console.log(new Parent())} */}
-//       {/* <A/> */}
-//       {/* <Parent/> */}
-//       {/* <A/> */}
-//       {/* <Parent/> */}
-//       {/* <Count1 />
-//       <Count2 />
-//       <Count3/> */}
-//       {/* <Render test={(count, updateCount) => {
-//         return <div>
-//           <Count1 count={count} updateCount={updateCount} />
+function App() {
+  return (
+    <div>
+      {/* <h4>App com</h4> */}
+      {/* {new Parent().render()} */}
+      {/* <Parent age={100} /> */}
+      {/* {console.log(new Parent())} */}
+      {/* <A/> */}
+      {/* <Parent/> */}
+      {/* <A/> */}
+      {/* <Parent/> */}
+      {/* <Count1 />
+      <Count2 />
+      <Count3/> */}
+      {/* <Render test={(count, updateCount) => {
+        return <div>
+          <Count1 count={count} updateCount={updateCount} />
 
-//         </div>
-//       }} /> */}
-//       {/* <Render test={(count, updateCount) => {
-//         return <Count2 count={count } updateCount = {updateCount} />
-//       }} />
-//       <Render test={(count, updateCount) => {
-//         return <Count3 count={count } updateCount = {updateCount} />
-//       }} /> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Container/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//       {/* <Parent/> */}
-//     </div>
-//   )
-// }
+        </div>
+      }} /> */}
+      {/* <Render test={(count, updateCount) => {
+        return <Count2 count={count } updateCount = {updateCount} />
+      }} />
+      <Render test={(count, updateCount) => {
+        return <Count3 count={count } updateCount = {updateCount} />
+      }} /> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Container/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      {/* <Parent/> */}
+      <Parent/>
+    </div>
+  )
+}
 
-// export default App
+export default App
