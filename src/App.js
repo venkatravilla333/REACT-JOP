@@ -1,39 +1,48 @@
-import React from 'react'
-import Home from './Routing/Home'
-import About from './Routing/About'
-import Products from './Routing/Products'
+import React from 'react';
+import Home from './Routing/Home';
+// import About from './Routing/About'
+import Products from './Routing/Products';
 
-import {Route, Routes, useLocation} from 'react-router-dom'
-import Header from './Routing/Header'
-import Footer from './Routing/Footer'
-import ProductDetails from './Routing/ProductDetails'
-import PageNotFound from './Routing/PageNotFound'
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Header from './Routing/Header';
+import Footer from './Routing/Footer';
+import ProductDetails from './Routing/ProductDetails';
+import PageNotFound from './Routing/PageNotFound';
+
+var About = React.lazy(() => import('./Routing/About'));
 
 function App() {
- var url = useLocation()
+  var url = useLocation();
   return (
     <div>
-      {/* <Header /> */}
-      {url.pathname !== '/about' && <Header/> }
+      <Header />
+      {/* {url.pathname !== '/about' && <Header/> } */}
 
       <main className='main-div'>
-      <Routes>
-          <Route path='/home' element={<Home/> } />
-          <Route path='/about' element={<About/> } />
-          <Route path='*' element={<PageNotFound/> } />
-          <Route path='/products' element={<Products/> } >
-            <Route path=':id' element={<ProductDetails />} />
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home />} />
+            <Route
+              path='/about'
+              element={
+                <React.Suspense fallback='Loading'>
+                  <About />
+                </React.Suspense>
+              }
+            />
+            <Route path='*' element={<PageNotFound />} />
+            <Route path='/products' element={<Products />}>
+              <Route path=':id' element={<ProductDetails />} />
+            </Route>
           </Route>
-      </Routes>
+        </Routes>
       </main>
-      <Footer/>
-     
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
 
 // import React from 'react'
 // import Parent from './Class-Components/Refs/Attach-Refsto-ChildCom/Parent'
@@ -83,7 +92,7 @@ export default App
 //       {/* <Render test={(count, updateCount) => {
 //         return <div>
 //           <Count1 count={count} updateCount={updateCount} />
-          
+
 //         </div>
 //       }} /> */}
 //       {/* <Render test={(count, updateCount) => {
