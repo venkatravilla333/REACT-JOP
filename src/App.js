@@ -1,5 +1,6 @@
 import React from 'react';
-import Parent from './Performance/Prevent-Unnecessory-Re-rendering/Parent';
+import Parent from './Class-Components/Performance/Prevent-Unnecessory-Re-rendering/Parent';
+// import Parent from './Performance/Prevent-Unnecessory-Re-rendering/Parent';
 // import Home from './Routing/Home';
 // // import About from './Routing/About'
 // import Products from './Routing/Products';

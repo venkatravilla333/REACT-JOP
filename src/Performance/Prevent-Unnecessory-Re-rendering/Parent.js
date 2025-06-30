@@ -1,5 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react'
 import Child from './Child'
+import Heavy from './Heavy'
 
 function Parent() {
 
@@ -59,6 +60,10 @@ function Parent() {
   // var updateStateArr = () => {
   //   setArr([...stateArr, 10])
   // }
+
+  var updateCount = useCallback(() => {
+    setCount(count+1)
+  }, []) 
   
   console.log('parent render')
   return (
@@ -91,6 +96,9 @@ function Parent() {
       {/* <Child stateNum={stateNum} /> */}
       {/* <Child stateObj={stateObj} /> */}
       {/* <Child stateArr={stateArr} /> */}
+      <h4>Count in parent: {count}</h4>
+      <button onClick={updateCount}>update count</button>
+      <Heavy updateCount={updateCount} />
     </div>
   )
 }
